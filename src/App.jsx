@@ -38,7 +38,7 @@ function App() {
   ]
 
   return (
-    <div className=" flex flex-col items-center justify-start w-screen h-screen bg-blue-300">
+    <div className=" flex flex-col items-center justify-start w-screen h-screen bg-blue-200">
       <Header />
       <Quizlayout questions={questions} />
     </div>
