@@ -25,9 +25,6 @@ const Quizlayout = ({ questions }) => {
         }
     }
 
-
-
-
     return (
         <div className='flex flex-col items-center justify-start gap-4 p-10 bg-white rounded-lg w-[650px]'>
             {showScore ? (
@@ -58,23 +55,6 @@ const Quizlayout = ({ questions }) => {
                         questions={questions}
                     />
 
-                    {/* <button
-                        className="bg-blue-950 text-white text-lg py-3 px-12 rounded-2xl mt-4 hover:bg-blue-600 transition-all duration-300 ease-in-out disabled:opacity-50 "
-                        disabled={optionChosen === ''}
-                        onClick={() => {
-                            if (optionChosen === answer) {
-                                setScore(score + 1)
-                            }
-                            setOptionChosen('')
-                            if (currentQuestion < questions.length - 1) {
-                                setCurrentQuestion(currentQuestion + 1)
-                            } else {
-                                setShowScore(true)
-                            }
-                        }}
-                    >
-                        Next
-                    </button> */}
                 </div>
             )
             }
